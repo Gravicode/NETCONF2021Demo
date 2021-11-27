@@ -1,0 +1,29 @@
+﻿<h3>ErrorComponent</h3>
+<button class="btn btn-info" @onclick="MakeError">Click me to Error</button>
+    <div class="alert alert-warning"> 
+       @((MarkupString)Hasil)
+    </div>
+@code {
+    public string Hasil;
+    async Task MakeError()
+    {
+        await foreach (var no in Range(10, -1))
+        {
+            var result = 100 / no;
+            Hasil = $"100 / {no} = {result}";
+            await InvokeAsync(StateHasChanged);
+        }
+    }
+    static async IAsyncEnumerable<int> Range(int start, int end)
+    {
+
+        var op = start > end ? -1 : 1;
+        for (int i = start; i != end; i += op)
+        {
+           await Task.Delay(500);
+           yield return i;
+        }
+    }
+
+
+}

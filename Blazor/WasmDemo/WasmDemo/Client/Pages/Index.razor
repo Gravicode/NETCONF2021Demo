@@ -1,0 +1,38 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+<Info Message="Welcome to your new app."></Info>
+
+@foreach (var widget in widgets)
+{   
+    <DynamicComponent Type="@widget.Type" Parameters="@widget.Parameters"/>
+}
+<SurveyPrompt Title="How is Blazor working for you?" />
+@code{
+     private readonly List<Widget> widgets = new()
+    {
+        new Widget { Type = typeof(FetchData) },
+        new Widget
+        {
+            Type = typeof(Counter), 
+            Parameters = new Dictionary<string, object>
+            {
+                ["InitialValue"] = 10
+            }
+        }
+    };
+
+     protected override async Task OnInitializedAsync()
+    {
+        
+    }
+
+    public record Widget {
+    public Type Type;    
+    public IDictionary<string, object> Parameters;
+    }   
+
+}
