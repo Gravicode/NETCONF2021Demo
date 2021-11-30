@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLSparkModel", "MLSparkModel.csproj", "{FEFE8274-540B-4E2F-89A4-E09EE59ACEED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLSparkModel_ConsoleApp", "..\MLSparkModel_ConsoleApp\MLSparkModel_ConsoleApp.csproj", "{76BA10B2-C30E-4FA7-9A14-DAB43DBD51EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEFE8274-540B-4E2F-89A4-E09EE59ACEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEFE8274-540B-4E2F-89A4-E09EE59ACEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEFE8274-540B-4E2F-89A4-E09EE59ACEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEFE8274-540B-4E2F-89A4-E09EE59ACEED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76BA10B2-C30E-4FA7-9A14-DAB43DBD51EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76BA10B2-C30E-4FA7-9A14-DAB43DBD51EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76BA10B2-C30E-4FA7-9A14-DAB43DBD51EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76BA10B2-C30E-4FA7-9A14-DAB43DBD51EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {170BFF52-FD6C-403E-ACA8-43F722987964}
+	EndGlobalSection
+EndGlobal
